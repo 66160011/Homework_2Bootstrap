@@ -1,1 +1,33 @@
 # Homework_2Bootstrap
+
+- git checkout -b develop
+- git add .
+- git commit -m "เริ่มต้นโครงสร้างโปรเจค"
+- git add .
+- git commit -m "coppy index"
+- git add .
+- git commit -m "coppy info"
+- git add .
+- git commit -m "coppy contact"
+- git add .
+- git commit -m "imeges"
+- git add .
+- git commit -m "indexbootstrap"
+- git add .
+- git commit -m "infobootstrap"
+- git add .
+- git commit -m "contactbootstrap"
+- git add .
+- git commit -m "style"
+- git add .
+- git commit -m "แก้ไข info"
+- git add .
+- git commit -m "แก้ไข contact"
+- git add .
+- git commit -m "แก้ไข index"
+- git add .
+- git commit -m "เพิ่มรูป index"
+- git add .
+- git commit -m "แก้ไข style"
+- git add .
+- git commit -m "แก้ไข styleและindex"
