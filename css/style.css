@@ -268,3 +268,14 @@ footer a:hover {
     height: auto; /* รักษาสัดส่วน */
     object-fit: cover; /* ปรับให้รูปครอบคลุม container */
 }
+.main-image {
+    width: 100%; 
+    max-width: 80%; /* เพิ่มขนาดความกว้างของรูปภาพ */
+    height: auto; /* รักษาสัดส่วน */
+    border-radius: 20px; /* ขอบโค้งมนเพิ่ม */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+.text-center {
+    width: 90%; /* กำหนดความกว้างของ container */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
