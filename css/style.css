@@ -210,6 +210,7 @@ transition: background-color 0.3s ease;
 background-color: #e63e6a; /* สีชมพูอ่อนลง */
 }
 .img-fluid  {
+    max-width: 100%; /* ให้รูปไม่เกินความกว้างของ container */
     border-radius: 15px; /* ทำให้ขอบโค้งมน */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
     width: 50px; /* ปรับให้รูปเต็มความกว้างของการ์ด */
@@ -260,4 +261,10 @@ footer a {
 
 footer a:hover {
     color: #ffe4f1;
+}
+/* รูปภาพใน carousel */
+.carousel-item img {
+    width: 100%; /* ให้รูปเต็มความกว้างของ carousel */
+    height: auto; /* รักษาสัดส่วน */
+    object-fit: cover; /* ปรับให้รูปครอบคลุม container */
 }
