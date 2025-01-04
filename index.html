@@ -5,197 +5,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" c<!DOCTYPE html>
     <html lang="en">
-<head>
+
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>hw2 travel</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500&display=swap" rel="stylesheet">
-      
-        
+
+
     </head>
-    
-    <body>
-        <!-- Header -->
-        <header>
-            <div class="container">
-                <a class="navbar-brand d-block mb-3" href="index.html">
-                    <img src="imeges/DALL·E 2025-01-03 19.40.42 - A creative logo design for Nakhon Sawan, Thailand, featuring a crocodile, a lotus flower, key landmarks such as Wat Kiriwong's golden pagoda, and natu.webp" alt="Nakhon Sawan Logo" class="img-fluid"
-                        style="max-height: 100px;">
-                </a>
-                <h1 class="display-6">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
-                <div class="d-flex justify-content-center mt-3">
-                    <input type="text" class="form-control w-50" id="searchInput" placeholder="ค้นหา...">
-                    <button class="btn btn-light ms-2" onclick="performSearch()">ค้นหา</button>
-                </div>
-            </div>
-        </header>
-    
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
-                        <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <!-- Main Content -->
-        <main class="container my-4">
-            <div class="text-center mb-4">
-                <img class="img-fluid rounded shadow" src="imeges/สถานที่ท่องเที่ยว (1).png" alt="Nakhon Sawan">
-            </div>
-    
-            <p class="lead text-center">
-                นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
-                “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน
-            </p>
-    
-            <!-- Tourist Spots -->
-            <section class="mt-4">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top" src="imeges/info06.jpg" alt="Tourist Spot 1">
-                            <div class="card-body">
-                                <p class="card-text text-center">จุดท่องเที่ยว 1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top" src="imeges/info07.jpg" alt="Tourist Spot 2">
-                            <div class="card-body">
-                                <p class="card-text text-center">จุดท่องเที่ยว 2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img class="card-img-top" src="imeges/info08.jpg" alt="Tourist Spot 3">
-                            <div class="card-body">
-                                <p class="card-text text-center">จุดท่องเที่ยว 3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <!-- Slide 1 -->
-                  <div class="carousel-item active">
-                    <img src="imeges/info09.jpg" class="d-block w-100" alt="Image 1">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>ฟาร์มแกะทหารช่าง</p>
-                    </div>
-                  </div>
-                  <!-- Slide 2 -->
-                  <div class="carousel-item">
-                    <img src="imeges/info10.jpg" class="d-block w-100" alt="Image 2">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>วัดเทพนิมิตทรงธรรม</p>
-                    </div>
-                  </div>
-                  <!-- Slide 3 -->
-                  <div class="carousel-item">
-                    <img src="imeges/info11.jpg" class="d-block w-100" alt="Image 3">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>เป๋าตุงฟาร์ม</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>    
-        </main>
-    
-        <!-- Footer -->
-        <footer class="text-center py-3">
-            <div class="container text-center">
-                <p>&copy; 2025 จังหวัดนครสวรรค์ยินดีต้อนรับ ติดต่อเรา <a href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
-            </div>
-        </footer>
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-        <script>
-            function performSearch() {
-                const query = document.getElementById('searchInput').value;
-                if (query) {
-                    alert(`Searching for: ${query}`);
-                } else {
-                    alert('กรุณาใส่คำค้นหา');
-                }
-            }
-        </script>
-    </body>
-    
-    </html>
-    ontent="width=device-width, initial-scale=1.0">
-    <title>hw1 travel</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-</head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
-            <div class="header-home">
-                <nav class="menu" aria-label="เมนูนำทางหลัก">
-                    <button class="menu-toggle" aria-label="เปิดเมนู">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                    <div class="title">
-                        <li><a href="index.html">หน้าหลัก</a></li>
-                        <li><a href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
-                        <li><a href="contact.html">ติดต่อเรา</a></li>
-                    </div>
-                </nav>
+            <a class="navbar-brand d-block mb-3" href="index.html">
+                <img src="imeges/DALL·E 2025-01-03 19.40.42 - A creative logo design for Nakhon Sawan, Thailand, featuring a crocodile, a lotus flower, key landmarks such as Wat Kiriwong's golden pagoda, and natu.webp"
+                    alt="Nakhon Sawan Logo" class="img-fluid" style="max-height: 100px;">
+            </a>
+            <h1 class="display-6">สถานที่ท่องเที่ยวจังหวัดนครสวรรค์</h1>
+            <div class="d-flex justify-content-center mt-3">
+                <input type="text" class="form-control w-50" id="searchInput" placeholder="ค้นหา...">
+                <button class="btn btn-light ms-2" onclick="performSearch()">ค้นหา</button>
             </div>
+        </div>
     </header>
-<img class="img-home" src="image/สถานที่ท่องเที่ยว.png" alt="">
-<main>
-    <p>นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
-        “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน อันเป็นต้นแม่น้ำเจ้าพระยานั่นเอง นครสวรรค์
-        แม้จะเป็นจังหวัดทางภาคเหนือที่ไม่ค่อยได้รับความนิยมในการมาท่องเที่ยวเท่าไหร่นัก แต่คุณรู้หรือไม่ว่าที่นี่
-        มีสถานที่ท่องเที่ยวที่น่าสนใจหลายแห่งที่เหมาะแก่การมาเที่ยวชม </p>
-    <section>
-            <div class="grid-info">
 
-                <div class="home-img-con">
-                    <img class="img-info" src="image/info06.jpg" alt="">
-                    <img class="img-info" src="image/info07.jpg" alt="">
-                    <img class="img-info" src="image/info08.jpg" alt="">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="info.html">ข้อมูลท่องเที่ยวจังหวัด</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="text-center mb-4">
+            <img class="img-fluid rounded shadow" src="imeges/สถานที่ท่องเที่ยว (1).png" alt="Nakhon Sawan">
+        </div>
+
+        <p class="lead text-center">
+            นครสวรรค์ จังหวัดทางตอนล่างของภาคเหนือที่ใหญ่รองลงมาจากเชียงใหม่ ที่นี่เป็นเมืองที่รู้จักในนาม
+            “เมืองปากน้ำโพ” ซึ่งมาจากบริเวณที่แม่น้ำปิงและน่านมาบรรจบกัน
+        </p>
+
+        <!-- Tourist Spots -->
+        <section class="mt-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="imeges/info06.jpg" alt="Tourist Spot 1">
+                        <div class="card-body">
+                            <p class="card-text text-center">จุดท่องเที่ยว 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="imeges/info07.jpg" alt="Tourist Spot 2">
+                        <div class="card-body">
+                            <p class="card-text text-center">จุดท่องเที่ยว 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="imeges/info08.jpg" alt="Tourist Spot 3">
+                        <div class="card-body">
+                            <p class="card-text text-center">จุดท่องเที่ยว 3</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <p>บึงบอระเพ็ด เป็นบึงน้ำจืดซึ่งเกิดขึ้นตามธรรมชาติ ในอดีตได้ชื่อว่าเป็น ทะเลเหนือ หรือ จอมบึง
-                    เพราะมีสัตว์และพันธุ์พืชน้ำอยู่มากมาย มีความอุดมสมบูรณ์
-                    และเป็นบึงทะเลสาบน้ำจืดขนาดใหญ่ที่สุดในประเทศไทย มีจระเข้ที่สามารถดูอย่างใกล้ชิดในธรรมชาติ ซึ่ง
-                    ได้ประกาศเป็นเขตห้ามล่าสัตว์ป่า และอยู่ในความดูแลของกองอนุรักษ์สัตว์ป่า</p>
+        </section>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="imeges/info09.jpg" class="d-block w-100" alt="Image 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>ฟาร์มแกะทหารช่าง</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="imeges/info10.jpg" class="d-block w-100" alt="Image 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>วัดเทพนิมิตทรงธรรม</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="imeges/info11.jpg" class="d-block w-100" alt="Image 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>เป๋าตุงฟาร์ม</p>
+                    </div>
+                </div>
             </div>
-    </section>
-</main>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 จังหวัดนครสวรรค์ยินดีต้อนรับ ติดต่อเรา <a
+                    href="mailto:66160011@go.buu.ac.th">66160011@go.buu.ac.th</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                alert(`Searching for: ${query}`);
+            } else {
+                alert('กรุณาใส่คำค้นหา');
+            }
+        }
+    </script>
 </body>
 
 </html>
