@@ -215,3 +215,49 @@ background-color: #e63e6a; /* สีชมพูอ่อนลง */
     width: 50px; /* ปรับให้รูปเต็มความกว้างของการ์ด */
     height: auto; /* รักษาสัดส่วนของรูป */
 }
+body {
+    font-family: 'Mali', cursive;
+    background-color: #ffe4f1; /* สีพื้นหลังชมพู */
+}
+
+header {
+    background-color: #f8bac5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #f898b3;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffe4f1 !important;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+}
+
+footer {
+    background-color: #ff748d;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffe4f1;
+}
